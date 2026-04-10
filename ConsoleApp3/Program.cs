@@ -1,16 +1,17 @@
 ﻿
 using ConsoleApp3;
+using System;
 
 class Program
 {
     static void Main()
     {
-        UI UI = new UI();
-        UI.ShowBanner();
-        UI.Divider();
+        UI Interface = new UI();
+        Interface.ShowBanner();
+        Interface.Divider();
 
-        string name = UI.GetUserName();
-        UI.GreetUser(name);
+        string name = Interface.GetUserName();
+        Interface.GreetUser(name);
 
         Chatbot.HandleUserInput(name);
     }
