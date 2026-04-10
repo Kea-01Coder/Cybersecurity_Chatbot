@@ -1,0 +1,6 @@
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.csproj.AssemblyReference.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.AssemblyInfoInputs.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.AssemblyInfo.cs
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.csproj.CoreCompileInputs.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.sourcelink.json

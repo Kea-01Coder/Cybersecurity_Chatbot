@@ -13,6 +13,6 @@ class Program
         string name = Interface.GetUserName();
         Interface.GreetUser(name);
 
-        Chatbot.HandleUserInput(name);
+        Chatbot.StartChat(name);
     }
 }

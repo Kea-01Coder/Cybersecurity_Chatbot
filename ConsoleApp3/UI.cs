@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    internal class Class1
+    internal class UI
     {
-        public static class UI
+        public static class UI1
         {
             public static void ShowBanner()
             {
                 Console.ForegroundColor = ConsoleColor.Green;
 
                 Console.WriteLine(@"
-   ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
-  ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
-  ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
-  ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
-  ╚██████╗   ██║   ██████╔╝███████╗██║  ██║
-   ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝
+                       ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
+                      ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
+                      ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
+                      ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
+                      ╚██████╗   ██║   ██████╔╝███████╗██║  ██║
+                       ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝
 
-        🔐 CYBERSECURITY AWARENESS BOT 🔐
-        ");
+                            🔐 CYBERSECURITY AWARENESS BOT 🔐
+                            ");
 
                 Console.ResetColor();
             }
