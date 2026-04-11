@@ -8,8 +8,6 @@ namespace ConsoleApp3
 {
     internal class UI
     {
-        public static class UI1
-        {
             public static void ShowBanner()
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -28,17 +26,11 @@ namespace ConsoleApp3
                 Console.ResetColor();
             }
 
-            public static void Divider()
-            {
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.WriteLine("\n==================================================\n");
-                Console.ResetColor();
-            }
-
             public static string GetUserName()
             {
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.Write("Enter your name: ");
-                string name = Console.ReadLine();
+                    string name = Console.ReadLine();
 
                 if (string.IsNullOrWhiteSpace(name))
                     return "User";
@@ -48,9 +40,11 @@ namespace ConsoleApp3
 
             public static void GreetUser(string name)
             {
-                TypeText($"\nWelcome, {name}! 👋\n");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                TypeText($"\nWelcome, {name}! \n");
                 TypeText("I am your Cybersecurity Awareness Bot.\n");
-                TypeText("Ask me about passwords, phishing, scams, or safe browsing.\n");
+                TypeText("Ask me about : \n" +
+                    "1. Passwords \n 2. Phishing \n 3. Scams \n 4. Safe browsing.\n 5. Malware");
                 TypeText("Type 'exit' to quit.\n");
             }
 
@@ -64,4 +58,4 @@ namespace ConsoleApp3
             }
         }
     }
-}
+

@@ -6,13 +6,10 @@ class Program
 {
     static void Main()
     {
-        UI Interface = new UI();
-        Interface.ShowBanner();
-        Interface.Divider();
+        UI.ShowBanner();
 
-        string name = Interface.GetUserName();
-        Interface.GreetUser(name);
-
+        string name = UI.GetUserName();
+        UI.GreetUser(name); 
         Chatbot.StartChat(name);
     }
 }

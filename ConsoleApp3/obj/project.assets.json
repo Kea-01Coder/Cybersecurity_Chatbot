@@ -370,6 +370,28 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "System.Speech/10.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Text.Encodings.Web/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -927,6 +949,38 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Speech/10.0.5": {
+      "sha512": "MYkGiMGWYc9rhyvsmf2UGIHD4RVJ3+uNgllFPP1YW6ILJJDXpDN8jMcy++0E/KrG507kTPCo5EOW4tEwUOCKhQ==",
+      "type": "package",
+      "path": "system.speech/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Speech.targets",
+        "lib/net10.0/System.Speech.dll",
+        "lib/net10.0/System.Speech.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.xml",
+        "lib/net9.0/System.Speech.dll",
+        "lib/net9.0/System.Speech.xml",
+        "lib/netstandard2.0/System.Speech.dll",
+        "lib/netstandard2.0/System.Speech.xml",
+        "runtimes/win/lib/net10.0/System.Speech.dll",
+        "runtimes/win/lib/net10.0/System.Speech.xml",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.xml",
+        "runtimes/win/lib/net9.0/System.Speech.dll",
+        "runtimes/win/lib/net9.0/System.Speech.xml",
+        "system.speech.10.0.5.nupkg.sha512",
+        "system.speech.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.Encodings.Web/6.0.0": {
       "sha512": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
       "type": "package",
@@ -1049,7 +1103,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.CognitiveServices.Speech >= 1.49.0",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.23.0"
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.23.0",
+      "System.Speech >= 10.0.5"
     ]
   },
   "packageFolders": {
@@ -1110,6 +1165,10 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
             "version": "[1.23.0, )"
+          },
+          "System.Speech": {
+            "target": "Package",
+            "version": "[10.0.5, )"
           }
         },
         "imports": [
