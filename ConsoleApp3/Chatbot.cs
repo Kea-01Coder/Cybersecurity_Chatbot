@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Speech.Synthesis;
+using System.ComponentModel.Design;
+using System.Reflection.Metadata;
 
 namespace ConsoleApp3
 {
@@ -47,7 +49,8 @@ namespace ConsoleApp3
 
                 if (input.Contains("exit"))
                 {
-                    UI.TypeText($"\nGoodbye {name}, stay safe online! \n");
+                    UI.TypeText($"\nGoodbye {name}, stay safe online! \n", false); // don't speak here
+                    Speech.SpeakAndWait($"\nGoodbye {name}, stay safe online! \n");       // speak synchronously
                     break;
                 }
 
@@ -75,12 +78,12 @@ namespace ConsoleApp3
                     TopicMalware();
             }
 
-            else if (input.Contains("Scams"))
+            else if (input.Contains("scams"))
             {
                TopicScams();
             }
 
-            else if (input.Contains("Safe Browsing"))
+            else if (input.Contains("safe browsing"))
             {
                 SafeBrowsing();
             }
@@ -112,6 +115,10 @@ namespace ConsoleApp3
                 Console.WriteLine("4. Back to Main Menu");
 
                 String choice = Console.ReadLine();
+                Console.WriteLine();
+
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red;
                 switch (choice)
                 {
                     case "1":
@@ -125,6 +132,7 @@ namespace ConsoleApp3
                         break;
                     case "4":
                         Console.WriteLine("Returning to main menu...");
+                        UI.Menu();
                         break;
                     default:
                         Console.WriteLine("Invalid option. Please choose 1, 2, 3, or 4.");
@@ -135,6 +143,7 @@ namespace ConsoleApp3
 
         public static void TopicPassword()
         {
+         
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -153,6 +162,10 @@ namespace ConsoleApp3
                 Console.WriteLine("4. Back to Main Menu");
                 
                 String choice = Console.ReadLine();
+                Console.WriteLine();
+
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red;
                 switch (choice)
                 {
                     case "1":
@@ -162,10 +175,11 @@ namespace ConsoleApp3
                         Console.WriteLine("To create a strong password, use a combination of uppercase and lowercase letters, numbers, and special characters. Avoid using common words, phrases, or easily guessable information like birthdays.");
                         break;
                     case "3":
-                        Console.WriteLine("Password management tips include: 1) Use a password manager to generate and store complex passwords. \n 2) Never reuse passwords across multiple sites. \n 3) Change your passwords regularly, especially if you suspect a breach.");
+                        Console.WriteLine("Password management tips include:\n 1) Use a password manager to generate and store complex passwords. \n 2) Never reuse passwords across multiple sites. \n 3) Change your passwords regularly, especially if you suspect a breach.");
                         break;
                     case "4":
                         Console.WriteLine("Returning to main menu...");
+                        UI.Menu();
                         return;
                     default:
                         Console.WriteLine("Invalid option. Please choose 1, 2, 3, or 4.");
@@ -193,20 +207,24 @@ namespace ConsoleApp3
                 Console.WriteLine("3. How to Protect Against Malware");
                 Console.WriteLine("4. Back to Main Menu");
                 String choice = Console.ReadLine();
+                Console.WriteLine();
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red;
                 switch (choice)
                 {
                     case "1":
                         Console.WriteLine("Malware, short for malicious software, is any software intentionally designed to cause damage to a computer, server, client, or computer network. It can take the form of viruses, worms, trojans, ransomware, spyware, adware, and more.");
                         break;
                     case "2":
-                        Console.WriteLine("Common types of malware include: 1) Viruses that attach themselves to clean files and spread throughout a system. \n 2) Ransomware that locks your files and demands payment for their release. \n 3) Spyware that secretly gathers user information without consent.");
+                        Console.WriteLine("Common types of malware include:\n 1) Viruses that attach themselves to clean files and spread throughout a system. \n 2) Ransomware that locks your files and demands payment for their release. \n 3) Spyware that secretly gathers user information without consent.");
                         break;
                     case "3":
-                        Console.WriteLine("To protect against malware: 1) Keep your operating system and software up to date. \n 2) Use reputable antivirus and anti-malware software. \n 3) Be cautious when downloading files or clicking on links from unknown sources.");
+                        Console.WriteLine("To protect against malware:\n 1) Keep your operating system and software up to date. \n 2) Use reputable antivirus and anti-malware software. \n 3) Be cautious when downloading files or clicking on links from unknown sources.");
                         break;
                     case "4":
                         Console.WriteLine("Returning to main menu...");
-                        break;
+                        UI.Menu();
+                        return;
                     default:
                         Console.WriteLine("Invalid option. Please choose 1, 2, 3, or 4.");
                         break;
@@ -232,6 +250,10 @@ namespace ConsoleApp3
                 Console.WriteLine("3. What to Do if You Encounter a Scam");
                 Console.WriteLine("4. Back to Main Menu");
                 String choice = Console.ReadLine();
+                Console.WriteLine();
+
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red;
                 switch (choice)
                 {
                     case "1":
@@ -245,7 +267,8 @@ namespace ConsoleApp3
                         break;
                     case "4":
                         Console.WriteLine("Returning to main menu...");
-                        break;
+                        UI.Menu();
+                        return;
                     default:
                         Console.WriteLine("Invalid option. Please choose 1, 2, 3, or 4.");
                         break;
@@ -255,6 +278,7 @@ namespace ConsoleApp3
 
         public static void SafeBrowsing()
         {
+          
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -272,20 +296,24 @@ namespace ConsoleApp3
                 Console.WriteLine("3. Common Online Threats");
                 Console.WriteLine("4. Back to Main Menu");
                 String choice = Console.ReadLine();
+                Console.WriteLine();
+                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red;
                 switch (choice)
                 {
                     case "1":
                         Console.WriteLine("Safe browsing involves practices that help protect your personal information and devices from online threats while surfing the internet.");
                         break;
                     case "2":
-                        Console.WriteLine("Tips for safe browsing include: 1) Use secure websites (look for HTTPS). \n 2) Avoid clicking on suspicious links. \n 3) Keep your browser and plugins updated.");
+                        Console.WriteLine("Tips for safe browsing include:\n 1) Use secure websites (look for HTTPS). \n 2) Avoid clicking on suspicious links. \n 3) Keep your browser and plugins updated.");
                         break;
                     case "3":
                         Console.WriteLine("Common online threats include phishing sites, malicious downloads, and fake news websites.");
                         break;
                     case "4":
                         Console.WriteLine("Returning to main menu...");
-                        break;
+                        UI.Menu();
+                        return;
                     default:
                         Console.WriteLine("Invalid option. Please choose 1, 2, 3, or 4.");
                         break;

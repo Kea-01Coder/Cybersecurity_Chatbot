@@ -154,3 +154,5 @@ C:\Users\Student\source\repos\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0
 C:\Users\Student\source\repos\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.pdb
 C:\Users\Student\source\repos\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\Cybersecurity.Chatbot.POE.genruntimeconfig.cache
 C:\Users\Student\source\repos\Cybersecurity_Chatbot\ConsoleApp3\obj\Debug\net8.0\ref\Cybersecurity.Chatbot.POE.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\bin\Debug\net8.0\System.Speech.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\ConsoleApp3\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Speech.dll
