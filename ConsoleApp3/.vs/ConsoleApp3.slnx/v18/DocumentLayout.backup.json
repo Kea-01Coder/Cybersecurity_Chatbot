@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\consoleapp3\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|solutionrelative:ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\consoleapp3\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|solutionrelative:chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\consoleapp3\\speech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|solutionrelative:speech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\consoleapp3\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|solutionrelative:chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\consoleapp3\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|solutionrelative:ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE5DAE88-E9E4-8FA9-36D7-6A88A603DCE6}|Cybersecurity.Chatbot.POE.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UI.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\UI.cs",
               "RelativeDocumentMoniker": "UI.cs",
-              "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\UI.cs",
-              "RelativeToolTip": "UI.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAcwE0AAAA0AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\UI.cs*",
+              "RelativeToolTip": "UI.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwFQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T11:02:49.154Z",
               "IsPinned": true,
@@ -57,13 +57,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Chatbot.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\Chatbot.cs",
               "RelativeDocumentMoniker": "Chatbot.cs",
               "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\Chatbot.cs",
               "RelativeToolTip": "Chatbot.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAYwDQAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAACQBAAAAAAAAAAAAACQBAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T10:29:44.739Z",
               "EditorCaption": ""
@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\ConsoleApp3\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T10:28:55.835Z",
               "EditorCaption": ""

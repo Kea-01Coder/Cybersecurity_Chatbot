@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
@@ -13,6 +13,13 @@
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.49.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
     <PackageReference Include="System.Speech" Version="10.0.5" />
+    <PackageReference Include="System.Windows.Extensions" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="welcome.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

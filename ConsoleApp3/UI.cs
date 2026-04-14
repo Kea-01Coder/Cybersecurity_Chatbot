@@ -10,12 +10,18 @@ namespace ConsoleApp3
 {
     internal class UI
     {
-    
-    
         public static void PlayWelcome()
         {
-            SoundPlayer player = new SoundPlayer("welcome.wav");
-            player.PlaySync(); // waits until done
+            try
+            {
+                SoundPlayer player = new SoundPlayer("welcome.wav");
+                player.Load(); // ensures file loads first
+                player.PlaySync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Audio error: " + ex.Message);
+            }
         }
 
         public static void ShowBanner()
@@ -76,6 +82,7 @@ namespace ConsoleApp3
             " 3. Scams \n" +
             " 4. Safe browsing.\n" +
             " 5. Malware\n" +
+            " 6.General Questions\n" +
             "Type 'exit' to quit.\n";
             Console.WriteLine(Menu);
         }

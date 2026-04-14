@@ -6,9 +6,8 @@ class Program
 {
     static void Main()
     {
-        UI uI = new UI();
         UI.ShowBanner();
-
+        UI.PlayWelcome();
         string name = UI.GetUserName();
         UI.GreetUser(name); 
       
