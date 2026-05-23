@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cybersecurity.Chatbot.POE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cf109ecb468179a399339c020ce452e066eb382")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73f93fcba5891d6b4fa12e25db36aca4dc1d75d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cybersecurity.Chatbot.POE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cybersecurity.Chatbot.POE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
