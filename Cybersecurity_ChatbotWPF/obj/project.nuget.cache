@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Cdt+upsoNo=",
+  "dgSpecHash": "iunvj1QTLSc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\source\\repos\\Cybersecurity_ChatbotWPF\\Cybersecurity_ChatbotWPF.csproj",
+  "projectFilePath": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Cybersecurity_ChatbotWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Student\\.nuget\\packages\\system.speech\\10.0.8\\system.speech.10.0.8.nupkg.sha512"
   ],
