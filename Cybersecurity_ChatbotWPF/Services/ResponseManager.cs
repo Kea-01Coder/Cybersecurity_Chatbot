@@ -4,15 +4,13 @@ using System.Text;
 
 namespace Cybersecurity_ChatbotWPF.Services
 {
-    internal class ResponseManager
-    {
-        public class ResponseManager
+        public class ResponseManagers
         {
             private List<string> phishingTips;
             private List<string> generalTips;
             private Random random;
 
-            public ResponseManager()
+            public ResponseManagers()
             {
                 random = new Random();
 
@@ -82,5 +80,4 @@ namespace Cybersecurity_ChatbotWPF.Services
             }
         }
 
-    }
 }

@@ -4,8 +4,6 @@ using System.Text;
 
 namespace Cybersecurity_ChatbotWPF.Services
 {
-    internal class Memory
-    {
         public class MemoryManager
         {
             private string userName;
@@ -103,7 +101,6 @@ namespace Cybersecurity_ChatbotWPF.Services
                 conversationHistory.Clear();
                 messageCount = 0;
             }
-        }
-    }
+        } 
 }
 
