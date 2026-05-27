@@ -21,3 +21,27 @@ C:\Users\Student\source\repos\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows
 C:\Users\Student\source\repos\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.pdb
 C:\Users\Student\source\repos\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.genruntimeconfig.cache
 C:\Users\Student\source\repos\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\ref\Cybersecurity_ChatbotWPF.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.csproj.AssemblyReference.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF_MarkupCompile.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.g.resources
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.AssemblyInfoInputs.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.AssemblyInfo.cs
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.csproj.CoreCompileInputs.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.sourcelink.json
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\refint\Cybersecurity_ChatbotWPF.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.pdb
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.exe
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.deps.json
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.runtimeconfig.json
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.pdb
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\System.Speech.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Speech.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersec.51AB821A.Up2Date
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.genruntimeconfig.cache
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\ref\Cybersecurity_ChatbotWPF.dll

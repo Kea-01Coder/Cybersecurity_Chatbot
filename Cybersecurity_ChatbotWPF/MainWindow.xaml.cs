@@ -16,9 +16,9 @@ namespace CybersecurityChatbotWPF
             private ObservableCollection<ChatMessage> chatMessages = new ObservableCollection<ChatMessage>();
 
             // Services
-            private KeywordRecogniser keywordRecognizer;
+            private KeywordRecognizer keywordRecognizer;
             private SentimentAnalyzer sentimentAnalyzer;
-            private ResponseManager responseManager;
+            private ResponseManagers responseManager;
             private MemoryManager memoryManager;
             private SpeechServices speechService;
 
@@ -53,9 +53,9 @@ namespace CybersecurityChatbotWPF
             {
                 try
                 {
-                    keywordRecognizer = new KeywordRecogniser();
+                    keywordRecognizer = new KeywordRecognizer();
                     sentimentAnalyzer = new SentimentAnalyzer();
-                    responseManager = new ResponseManager();
+                    responseManager = new ResponseManagers();
                     memoryManager = new MemoryManager();
                     speechService = new SpeechServices(Dispatcher);
                 }
@@ -98,25 +98,13 @@ namespace CybersecurityChatbotWPF
                 });
             }
 
-            private void ShowWelcomeBanner()
+            private void Welcome()
             {
-                // FIRST: Play your custom welcome voice recording
-                PlayCustomVoice("Audio/welcome.wav", "Welcome to CyberGuardian AI!");
+            // FIRST: Play your custom welcome voice recording
+            PlayCustomVoice("Audio/welcome.wav");
 
-                // SECOND: Display ASCII art in chat
-                AddMessage("System", "╔══════════════════════════════════════════════════════════════╗", Brushes.Cyan);
-                AddMessage("System", "║     ██████╗██╗   ██╗██████╗ ███████╗██████╗                  ║", Brushes.Cyan);
-                AddMessage("System", "║    ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗                 ║", Brushes.Cyan);
-                AddMessage("System", "║    ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝                 ║", Brushes.Cyan);
-                AddMessage("System", "║    ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗                 ║", Brushes.Cyan);
-                AddMessage("System", "║    ╚██████╗   ██║   ██████╔╝███████╗██║  ██║                 ║", Brushes.Cyan);
-                AddMessage("System", "║     ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝                 ║", Brushes.Cyan);
-                AddMessage("System", "║                                                              ║", Brushes.Cyan);
-                AddMessage("System", "║           🛡️  CYBERSECURITY AWARENESS BOT  🛡️               ║", Brushes.Cyan);
-                AddMessage("System", "╚══════════════════════════════════════════════════════════════╝", Brushes.Cyan);
-
-                // THIRD: Ask for name using text-to-speech
-                AddMessage("Bot", "Hello! Welcome to CyberGuardian AI. What's your name?", Brushes.LightGreen);
+            // THIRD: Ask for name using text-to-speech
+            AddMessage("Bot", "Hello! Welcome to CyberGuardian AI. What's your name?", Brushes.LightGreen);
                 speechService?.Speak("Hello! Welcome to CyberGuardian AI. What's your name?");
             }
 
@@ -333,9 +321,7 @@ namespace CybersecurityChatbotWPF
                     • 'tell me more' or 'another tip' - Get more advice
                     • 'I'm worried' - I'll respond with encouragement
                     • 'help' - Show this menu
-                    • 'exit' - End conversation
-
-                    Click the microphone button and speak naturally!";
+                    • 'exit' - End conversation";
 
                 AddMessage("Bot", help, Brushes.LightGreen);
                 speechService?.Speak("Here's help. You can ask about passwords, phishing, scams, or privacy.");
