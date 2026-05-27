@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Cybersecurity_ChatbotWPF.Services
 {
-    internal class SentimentAnalyzer
+    public class SentimentAnalyzer
     {
+
     }
 }
