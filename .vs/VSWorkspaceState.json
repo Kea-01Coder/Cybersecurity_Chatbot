@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Cybersecurity_ChatbotWPF",
+    "\\Cybersecurity_ChatbotWPF\\Services"
   ],
+  "SelectedNode": "\\Cybersecurity_ChatbotWPF\\Services\\Memory.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -22,34 +22,32 @@ namespace CybersecurityChatbotWPF
             private MemoryManager memoryManager;
             private SpeechServices speechService;
 
-            // Custom voice recording player
-            private SoundPlayer welcomeVoice;
-            
-            // State variables
-            private string lastTopic = null;
+        // Custom voice recording player
+        private MediaPlayer welcomePlayer;
 
-            public MainWindow()
+        // State variables
+        private string lastTopic = null;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            ChatListBox.ItemsSource = chatMessages;
+
+            // Initialize all services
+            InitializeServices();
+
+            // Initialize your custom voice recordings
+            InitializeVoiceRecordings();
+
+            // Hook up speech events
+            if (speechService != null)
             {
-                InitializeComponent();
-                ChatListBox.ItemsSource = chatMessages;
-
-                // Initialize all services
-                InitializeServices();
-
-                // Initialize your custom voice recordings
-                InitializeVoiceRecordings();
-
-                // Hook up speech events
-                if (speechService != null)
-                {
-                    speechService.SpeechRecognized += OnSpeechRecognized;
-                }
-
-                // Show welcome banner with your voice
-                ShowWelcomeBanner();
+                speechService.SpeechRecognized += OnSpeechRecognized;
             }
-
-            private void InitializeServices()
+            Welcome();
+        }
+          
+           private void InitializeServices()
             {
                 try
                 {
@@ -67,16 +65,20 @@ namespace CybersecurityChatbotWPF
 
             private void InitializeVoiceRecordings()
             {
-                welcomeVoice = new SoundPlayer();
+                welcomePlayer = new MediaPlayer();
             }
 
             private void PlayCustomVoice(string audioFilePath, string fallbackText = null)
             {
                 try
                 {
-                    welcomeVoice.SoundLocation = audioFilePath;
-                    welcomeVoice.Load();
-                    welcomeVoice.PlaySync(); // Waits for audio to finish
+                    welcomePlayer.Open(new Uri(audioFilePath));
+                    welcomePlayer.Play();
+                    // Waits for audio to finish
+                    while (welcomePlayer.Position < welcomePlayer.NaturalDuration)
+                    {
+                        System.Threading.Thread.Sleep(100);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -101,11 +103,11 @@ namespace CybersecurityChatbotWPF
             private void Welcome()
             {
             // FIRST: Play your custom welcome voice recording
-            PlayCustomVoice("Audio/welcome.wav");
+            PlayCustomVoice("welcome.wav","Welcome to CyberGuardian AI!");
 
             // THIRD: Ask for name using text-to-speech
-            AddMessage("Bot", "Hello! Welcome to CyberGuardian AI. What's your name?", Brushes.LightGreen);
-                speechService?.Speak("Hello! Welcome to CyberGuardian AI. What's your name?");
+            AddMessage("Bot", "I am your cybersecurity awareness bot. What's your name?", Brushes.LightGreen);
+                speechService?.Speak("I am your cybersecurity awareness bot. What's your name?");
             }
 
             private void AddMessage(string sender, string message, Brush color)

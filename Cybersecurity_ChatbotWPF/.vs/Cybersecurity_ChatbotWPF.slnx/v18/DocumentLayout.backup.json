@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\cybersecurity_chatbotwpf\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|solutionrelative:models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\cybersecurity_chatbotwpf\\ascii\\ascii_art.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|solutionrelative:ascii\\ascii_art.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\cybersecurity_chatbotwpf\\services\\keywordrecogniser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|solutionrelative:services\\keywordrecogniser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\cybersecurity_chatbotwpf\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|solutionrelative:models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F31149C9-146F-EAA3-784F-AB058073DF77}|Cybersecurity_ChatbotWPF.csproj|c:\\users\\student\\onedrive - advtech ltd\\documents\\github\\cybersecurity_chatbot\\cybersecurity_chatbotwpf\\services\\responsemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +50,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T12:52:46.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,21 +76,22 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHQAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAEQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-23T16:26:57.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\MainWindow.xaml*",
-              "RelativeToolTip": "MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-23T16:26:59.311Z",
+              "DocumentIndex": 2,
+              "Title": "Ascii_art.txt",
+              "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\ASCII\\Ascii_art.txt",
+              "RelativeDocumentMoniker": "ASCII\\Ascii_art.txt",
+              "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\ASCII\\Ascii_art.txt",
+              "RelativeToolTip": "ASCII\\Ascii_art.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-29T12:27:33.764Z",
               "EditorCaption": ""
             },
             {
@@ -85,14 +102,13 @@
               "RelativeDocumentMoniker": "Services\\KeywordRecogniser.cs",
               "ToolTip": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Services\\KeywordRecogniser.cs",
               "RelativeToolTip": "Services\\KeywordRecogniser.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T18:28:14.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T18:28:14.451Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ChatMessage.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Models\\ChatMessage.cs",
               "RelativeDocumentMoniker": "Models\\ChatMessage.cs",
@@ -100,12 +116,11 @@
               "RelativeToolTip": "Models\\ChatMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T18:31:01.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T18:31:01.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ResponseManager.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Services\\ResponseManager.cs",
               "RelativeDocumentMoniker": "Services\\ResponseManager.cs",
@@ -113,12 +128,11 @@
               "RelativeToolTip": "Services\\ResponseManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T18:29:22.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T18:29:22.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SentimentAnalyzer.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Services\\SentimentAnalyzer.cs",
               "RelativeDocumentMoniker": "Services\\SentimentAnalyzer.cs",
@@ -126,12 +140,11 @@
               "RelativeToolTip": "Services\\SentimentAnalyzer.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAcwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T18:28:58.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T18:28:58.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SpeechService.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Services\\SpeechService.cs",
               "RelativeDocumentMoniker": "Services\\SpeechService.cs",
@@ -143,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Memory.cs",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Services\\Memory.cs",
               "RelativeDocumentMoniker": "Services\\Memory.cs",
@@ -155,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Cybersecurity_ChatbotWPF.csproj",
               "DocumentMoniker": "C:\\Users\\Student\\OneDrive - ADvTECH Ltd\\Documents\\GitHub\\Cybersecurity_Chatbot\\Cybersecurity_ChatbotWPF\\Cybersecurity_ChatbotWPF.csproj",
               "RelativeDocumentMoniker": "Cybersecurity_ChatbotWPF.csproj",

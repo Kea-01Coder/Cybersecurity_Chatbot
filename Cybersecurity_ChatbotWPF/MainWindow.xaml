@@ -1,7 +1,7 @@
 ﻿<Window x:Class="CybersecurityChatbotWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="🛡️ CyberGuardian AI - Cybersecurity Awareness Bot" 
+        Title="CyberGuardian AI - Cybersecurity Awareness Bot" 
         Height="650" Width="800"
         WindowStartupLocation="CenterScreen"
         Background="#1A1A2E"
@@ -36,29 +36,41 @@
         </Grid.RowDefinitions>
 
         <!-- Header Panel -->
-        <Border Grid.Row="0" Background="#0F3460" Padding="15">
+        <!-- Header Panel with ASCII Art -->
+       
+        <Border Grid.Row="0" Background="#0F3460" Padding="15,10,15,10">
             <StackPanel>
                 <TextBlock FontFamily="Consolas" 
-                           FontSize="9" 
-                           Foreground="#00D4FF"
-                           TextAlignment="Center"
-                           FontWeight="Bold"
-                           Text="██████╗██╗   ██╗██████╗ ███████╗██████╗ 
-                                ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
-                                ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
-                                ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
-                                ╚██████╗   ██║   ██████╔╝███████╗██║  ██║
-                                 ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝"/>
+                   FontSize="10" 
+                   Foreground="#00D4FF"
+                   FontWeight="Normal"
+                   LineHeight="10"
+                   TextWrapping="NoWrap"
+                   xml:space="preserve">
+                    <TextBlock.Text>
+                                         ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
+                                        ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
+                                        ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
+                                        ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
+                                        ╚██████╗   ██║   ██████╔╝███████╗██║  ██║
+                                         ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝
+                    </TextBlock.Text>
+                </TextBlock>
 
                 <TextBlock Text="🛡️  CYBERSECURITY AWARENESS BOT  🛡️" 
-                           FontSize="18" 
-                           FontWeight="Bold"
-                           Foreground="#E94560"
-                           HorizontalAlignment="Center"
-                           Margin="0,10,0,0"/>
+                   FontSize="16" 
+                   FontWeight="Bold"
+                   Foreground="#E94560"
+                   HorizontalAlignment="Center"
+                   Margin="0,8,0,0"/>
+
+                <TextBlock Text="Your personal guide to staying safe online" 
+                   FontSize="10" 
+                   Foreground="#888888"
+                   HorizontalAlignment="Center"
+                   Margin="0,3,0,0"/>
             </StackPanel>
         </Border>
-
         <!-- Chat Display Area -->
         <Border Grid.Row="1" Margin="15" Background="#16213E">
             <ListBox x:Name="ChatListBox" 
