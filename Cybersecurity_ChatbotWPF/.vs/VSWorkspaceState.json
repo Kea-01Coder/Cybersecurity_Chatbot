@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
     "\\Services"
   ],
-  "SelectedNode": "\\Models\\TaskItem.cs",
+  "SelectedNode": "\\Services",
   "PreviewInSolutionExplorer": false
 }

@@ -45,3 +45,5 @@ C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\C
 C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersec.51AB821A.Up2Date
 C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\Cybersecurity_ChatbotWPF.genruntimeconfig.cache
 C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\ref\Cybersecurity_ChatbotWPF.dll
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\QuizWindow.baml
+C:\Users\Student\OneDrive - ADvTECH Ltd\Documents\GitHub\Cybersecurity_Chatbot\Cybersecurity_ChatbotWPF\obj\Debug\net10.0-windows\QuizWindow.g.cs
