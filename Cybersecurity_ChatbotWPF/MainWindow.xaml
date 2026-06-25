@@ -169,6 +169,23 @@
             </Grid>
         </Border>
 
+		<!-- Quick Tips Bar - Updated with Part 3 buttons -->
+		<Border Grid.Row="2"
+				Background="#0F3460"
+				Padding="8"
+				Margin="15,0,15,10"
+				CornerRadius="8">
+			<WrapPanel HorizontalAlignment="Center">
+				<Button Content="Password" Style="{StaticResource QuickTipButton}" Click="QuickTipPassword_Click"/>
+				<Button Content="Phishing" Style="{StaticResource QuickTipButton}" Click="QuickTipPhishing_Click"/>
+				<Button Content="Scam" Style="{StaticResource QuickTipButton}" Click="QuickTipScam_Click"/>
+				<Button Content="Privacy" Style="{StaticResource QuickTipButton}" Click="QuickTipPrivacy_Click"/>
+				<Button Content="Tasks" Style="{StaticResource QuickTipButton}" Click="QuickTipTasks_Click"/>
+				<Button Content="Quiz" Style="{StaticResource QuickTipButton}" Click="QuickTipQuiz_Click"/>
+				<Button Content="Help" Style="{StaticResource QuickTipButton}" Click="QuickTipHelp_Click"/>
+			</WrapPanel>
+		</Border>
+
         <!-- Status Bar -->
         <StatusBar Grid.Row="3" Background="#0F3460" Height="30" Margin="0,61,0,-15">
             <StatusBarItem RenderTransformOrigin="0.499,1.183">

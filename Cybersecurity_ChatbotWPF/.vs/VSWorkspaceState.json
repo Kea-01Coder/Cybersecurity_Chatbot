@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Services"
+    ""
   ],
-  "SelectedNode": "\\Services\\ActivityLogger.cs",
+  "SelectedNode": "\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
