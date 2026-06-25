@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using CybersecurityChatbotWPF.Models;
+using Cybersecurity_ChatbotWPF.Models;
 
-namespace CybersecurityChatbotWPF.Services
+namespace Cybersecurity_ChatbotWPF.Services
 {
     public class ActivityLogger
 	{
@@ -42,6 +42,7 @@ namespace CybersecurityChatbotWPF.Services
 
         public List<ActivityLogEntry> GetRecentLogs(int count = 10)
         {
+            int take = count;
             try
             {
                 return dbHelper.GetRecentActivityLogs(count);
@@ -50,7 +51,7 @@ namespace CybersecurityChatbotWPF.Services
             {
                 System.Diagnostics.Debug.WriteLine($"Failed to retrieve logs from database: {ex.Message}");
                 // Fallback to in-memory logs
-                int take = Math.Min(count, inMemoryLogs.Count);
+                take = Math.Min(count, inMemoryLogs.Count);
             }
             return inMemoryLogs.GetRange(inMemoryLogs.Count - take, take);
         }
@@ -59,9 +60,9 @@ namespace CybersecurityChatbotWPF.Services
         {
             var logs = GetRecentLogs(count);
             if (logs.Count == 0)
-                return "📭 No activity logs found.";
+                return "No activity logs found.";
 
-            string display = "📋 **Recent Activity Log:**\n\n";
+            string display = "**Recent Activity Log:**\n\n";
             for (int i = 0; i < logs.Count; i++)
             {
                 var log = logs[i];

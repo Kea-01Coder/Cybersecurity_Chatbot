@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using CybersecurityChatbotWPF.Models;
+using Cybersecurity_ChatbotWPF.Models;
 
-namespace CybersecurityChatbotWPF.Services
+namespace Cybersecurity_ChatbotWPF.Services
 {
     public class TaskManager
     {

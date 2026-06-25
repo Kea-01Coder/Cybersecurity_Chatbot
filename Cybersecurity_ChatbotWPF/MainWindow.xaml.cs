@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Cybersecurity_ChatbotWPF;
+using Cybersecurity_ChatbotWPF.Models;
+using Cybersecurity_ChatbotWPF.Services;
+using System;
 using System.Collections.ObjectModel;
 using System.Media;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
-using Cybersecurity_ChatbotWPF.Models;
-using Cybersecurity_ChatbotWPF.Services;
 
 namespace CybersecurityChatbotWPF
 {
@@ -337,21 +338,31 @@ namespace CybersecurityChatbotWPF
                 return;
             }
 
+            // Submit the answer and get feedback
             string feedback = quizManager.SubmitAnswer(selectedIndex);
             AddMessage("Bot", feedback, Brushes.LightGreen);
             speechService?.Speak(feedback);
 
-            // Get next question or result
-            string next = quizManager.GetNextQuestion();
-            if (next.Contains("Quiz Complete"))
+            // Get next question as QuizQuestion object
+            var nextQuestion = quizManager.GetNextQuestion();
+
+            if (nextQuestion != null)
             {
-                AddMessage("Bot", next, Brushes.LightGreen);
-                speechService?.Speak(next);
-                activityLogger?.Log("Quiz Completed", $"Score: {quizManager.GetQuizResult()}", "Quiz");
+                // There's a next question - display it
+                string nextQuestionText = quizManager.FormatQuestion(nextQuestion);
+                AddMessage("Bot", nextQuestionText, Brushes.LightGreen);
             }
             else
             {
-                AddMessage("Bot", next, Brushes.LightGreen);
+                // Quiz is complete!
+                string result = quizManager.GetQuizResult();
+                AddMessage("Bot", $"{result}", Brushes.LightGreen);
+                speechService?.Speak(result);
+                activityLogger?.Log("Quiz Completed", $"Score: {quizManager.GetScore()}/{quizManager.GetTotalQuestions()}", "Quiz");
+
+                // Save score to database
+                string userName = memoryManager?.GetUserName() ?? "Anonymous";
+                dbHelper?.SaveQuizScore(userName, quizManager.GetScore(), quizManager.GetTotalQuestions());
             }
         }
 
@@ -365,10 +376,6 @@ namespace CybersecurityChatbotWPF
             lastTopic = topic;
             activityLogger?.Log("Cybersecurity Info", $"Topic: {topic}", "Info");
         }
-
-        // =====================================================
-        // ==== YOUR ORIGINAL PART 2 LOGIC (Completely Kept) ===
-        // =====================================================
 
         private void HandlePart2Logic(string input)
         {
@@ -586,13 +593,6 @@ namespace CybersecurityChatbotWPF
             TopicPrivacy();
         }
 
-        // NEW: Quiz Button
-        private void QuickTipQuiz_Click(object sender, RoutedEventArgs e)
-        {
-            AddMessage("You", "Start quiz", Brushes.LightBlue);
-            HandleStartQuiz();
-        }
-
         // NEW: Tasks Button
         private void QuickTipTasks_Click(object sender, RoutedEventArgs e)
         {
@@ -664,6 +664,43 @@ namespace CybersecurityChatbotWPF
                     }
                     break;
                 }
+            }
+        }
+
+        private void QuickTipQuiz_Click(object sender, RoutedEventArgs e)
+        {
+            OpenQuizWindow();
+        }
+
+        private void OpenQuizWindow()
+        {
+            try
+            {
+                // Check if database is available
+                if (dbHelper == null)
+                {
+                    AddMessage("Bot", "Database is not available. Cannot start quiz.", Brushes.Orange);
+                    return;
+                }
+
+                // Initialize quiz manager if needed
+                if (quizManager == null)
+                    quizManager = new QuizManager(dbHelper, activityLogger);
+
+                // Create and show quiz window
+                var quizWindow = new QuizWindow(quizManager);
+                quizWindow.Owner = this;
+                quizWindow.QuizCompleted += (s, args) =>
+                {
+                    AddMessage("Bot", "Quiz completed! Well done!", Brushes.LightGreen);
+                    activityLogger?.Log("Quiz Completed", "User finished the quiz", "Quiz");
+                };
+                quizWindow.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                AddMessage("Bot", $"Error starting quiz: {ex.Message}", Brushes.Orange);
+                System.Diagnostics.Debug.WriteLine($"Quiz error: {ex.Message}");
             }
         }
     }

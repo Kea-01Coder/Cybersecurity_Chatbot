@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Data.Sqlite;
-using CybersecurityChatbotWPF.Models;
+using Cybersecurity_ChatbotWPF.Models;
 
-namespace CybersecurityChatbotWPF.Services
+namespace Cybersecurity_ChatbotWPF.Services
 {
     public class DatabaseHelper
     {

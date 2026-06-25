@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CybersecurityChatbotWPF.Models;
+using Cybersecurity_ChatbotWPF.Models;
 
-namespace CybersecurityChatbotWPF.Services
+namespace Cybersecurity_ChatbotWPF.Services
 {
     public class QuizManager
     {
@@ -211,20 +211,14 @@ namespace CybersecurityChatbotWPF.Services
             }
         }
 
-        public string GetNextQuestion()
+        public QuizQuestion GetNextQuestion()
         {
-            currentQuestionIndex++;
-            if (currentQuestionIndex >= questions.Count)
+            if (currentQuestionIndex + 1 < questions.Count)
             {
-                isQuizActive = false;
-                string result = GetQuizResult();
-                dbHelper.SaveQuizScore(userName ?? "Anonymous", score, questions.Count);
-                activityLogger.Log("Quiz Completed", $"Score: {score}/{questions.Count} - {result}", "Quiz");
-                return result;
+                currentQuestionIndex++;
+                return questions[currentQuestionIndex];
             }
-
-            var question = questions[currentQuestionIndex];
-            return FormatQuestion(question);
+            return null;
         }
 
         public string GetQuizResult()
@@ -267,6 +261,29 @@ namespace CybersecurityChatbotWPF.Services
             return $"**Welcome to the Cybersecurity Quiz!**\n\nAnswer all {questions.Count} questions.\n\n{FormatQuestion(firstQuestion)}";
         }
 
+        public bool IsAnswerCorrect(int selectedIndex)
+        {
+            if (currentQuestionIndex >= questions.Count) return false;
+            return questions[currentQuestionIndex].IsCorrect(selectedIndex);
+        }
+
+        public string GetExplanation(int selectedIndex)
+        {
+            if (currentQuestionIndex >= questions.Count) return "No explanation available.";
+            return questions[currentQuestionIndex].Explanation;
+        }
+
+        public int GetScore()
+        {
+            return score;
+        }
+
+        public bool IsQuizComplete()
+        {
+            return currentQuestionIndex >= questions.Count - 1;
+        }
+
+        
         public int GetTotalQuestions() => questions.Count;
         public int GetCurrentQuestionIndex() => currentQuestionIndex + 1;
     }

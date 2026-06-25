@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace CybersecurityChatbotWPF.Services
+namespace Cybersecurity_ChatbotWPF.Services
 {
     public class NLPSimulator
     {
