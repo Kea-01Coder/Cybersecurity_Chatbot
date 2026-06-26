@@ -138,3 +138,138 @@ Stores individual chat messages with sender, message content, color, and timesta
 - **Integration:** Connects GUI with all service classes
 
 ---
+
+# CyberGuardian AI - Part 3: Advanced Features
+
+## Project Overview
+
+**CyberGuardian AI** is a cybersecurity awareness chatbot with advanced features including task management, cybersecurity quizzes, NLP simulation, and activity logging. This is **Part 3** of the PROG6221 POE, building upon the console application (Part 1) and WPF GUI (Part 2).
+
+**Language:** C#  
+**Framework:** .NET 10.0 / WPF  
+**Architecture:** MVVM Pattern with Service Layer  
+**Database:** SQLite (local, self-contained)  
+
+---
+
+## Part 3 Development Timeline
+
+| Date         | Component                  | Description                           |
+|--------------|----------------------------|---------------------------------------|
+| 15 June 2026 | Models/TaskItem.cs         | Task data model with reminders        |
+| 15 June 2026 | Models/QuizQuestion.cs     | Quiz question data model              |
+| 15 June 2026 | Models/ActivityLogEntry.cs | Activity log data model               |
+| 15 June 2026 | Services/DatabaseHelper.cs | SQLite database operations            |
+| 16 June 2026 | Services/TaskManager.cs    | Task management logic                 |
+| 16 June 2026 | Services/QuizManager.cs    | Quiz logic with 12+ questions         |
+| 17 June 2026 | Services/NLPSimulator.cs   | NLP simulation with keyword detection |
+| 17 June 2026 | Services/ActivityLogger.cs | Activity logging with in-memory + DB  |
+| 18 June 2026 | QuizWindow.xaml            | Quiz GUI layout                       |
+| 18 June 2026 | QuizWindow.xaml.cs         | Quiz UI logic                         |
+| 20 June 2026 | Views/Converters/          | WPF value converters                  |
+| 25 June 2026 | Database integration       | SQLite database fully integrated      |    
+| 26 June 2026 | Testing & Bug Fixes        | All features working                  |
+
+---
+
+## Part 3 Features
+
+### Task 1: Task Assistant with Reminders
+- **Add tasks** with title and description
+- **Set reminders** with specific timeframes (e.g., "remind me in 3 days")
+- **View all tasks** with status (pending/completed)
+- **Complete tasks** - mark as done
+- **Delete tasks** - remove from database
+- **Database storage** - SQLite persistence
+
+### Task 2: Cybersecurity Mini-Game (Quiz)
+- **12+ cybersecurity questions** covering phishing, passwords, privacy, malware
+- **Mixed question types** - Multiple Choice and True/False
+- **Immediate feedback** with explanations for each answer
+- **Score tracking** - correct answers counted
+- **Final feedback** based on percentage score
+- **Dedicated Quiz Window** with progress bar
+
+### Task 3: NLP Simulation
+- **Intent recognition** using keyword detection
+- **Flexible phrasing** support (e.g., "Add task", "Create task", "New task")
+- **Regex pattern matching** for robust detection
+- **Extract task info** from natural language
+- **Extract reminder days** from phrases like "in 3 days"
+- **Extract quiz answers** from numeric input
+
+### Task 4: Activity Log Feature
+- **Automatic logging** of all actions
+- **Log types**: Tasks (add/complete/delete), Quiz (start/complete), NLP interactions, System events
+- **In-memory storage** with database backup
+- **View recent logs** with "Show activity log" command
+- **Timestamp tracking** for each action
+- **Fallback** if database is unavailable
+
+---
+
+## How to Navigate the Application
+
+### 1. **Getting Started**
+
+| Action            | Steps                                       |
+|-------------------|---------------------------------------------|
+| **Launch App**    | Press F5 or run the .exe file               |
+| **Welcome**       | Bot asks for your name                      |
+| **Set Name**      | Type your name and press Enter              |
+| **Voice Welcome** | Custom voice recording plays (if available) |
+
+### 2. **Quick Tip Buttons (Part 3 Additions)**
+
+| Button    | Function                 | Example Response                     |
+|-----------|--------------------------|--------------------------------------|
+| **Tasks** | View all current tasks   | Shows list with status and reminders |
+| **Quiz**  | Start cybersecurity quiz | Opens QuizWindow with 12+ questions  |
+
+### 3. **Task Commands**
+
+| Command                                      | Example                                                     | Function                  |
+|----------------------------------------------|-------------------------------------------------------------|---------------------------|
+| `Add task: [title]`                          | "Add task: Enable 2FA"                                      | Creates new task          |
+| `Add task with reminder in X days: [title]`  | "Add task with reminder in 7 days: Review privacy settings" |Creates task with reminder |
+| `List tasks`                                 | "List tasks"                                                | Shows all tasks           |
+| `Complete task: [title]`                     | "Complete task: Enable 2FA"                                 | Marks task as completed   |
+| `Delete task: [title]`                       | "Delete task: Enable 2FA"                                   | Deletes a task            |
+
+### 4. **Activity Log Commands**
+
+| Command             | Function             |
+|---------------------|----------------------|
+| `Show activity log` | Shows recent actions |
+| `Show log`          | Shows recent actions |
+
+### 5. **NLP Examples (Flexible Phrasing)**
+
+| User Input                                      | Intent Recognized      |
+|-------------------------------------------------|------------------------|
+| "Add task to enable 2FA"                        | Add Task               |
+| "Create new task: Update passwords"             | Add Task               |
+| "I need to remember to review privacy settings" | Add Task               |
+| "Remind me to check my accounts in 5 days"      | Add Task with Reminder |
+| "Show me my tasks"                              | List Tasks             |
+| "What tasks do I have?"                         | List Tasks             |
+| "Mark Enable 2FA as done"                       | Complete Task          |
+| "Delete the Enable 2FA task"                    | Delete Task            |
+| "Let's play the quiz"                           | Start Quiz             |
+| "I want to test my knowledge"                   | Start Quiz             |
+| "Show activity log"                             | Show Log               |
+
+---
+
+## Part 3 Demo Script
+1.Launch app → Database auto-creates
+2.Type "Add task: Enable 2FA" → Task saved to database
+3.Type "Add task with reminder in 7 days: Review privacy settings" → Task with reminder
+4.Type "List tasks" → Shows all tasks with status and reminders
+5.Type "Complete task: Enable 2FA" → Task marked completed
+6.Click Quiz button → Opens dedicated QuizWindow
+7.Type "Show activity log" → Shows recent actions
+8.Type "help" → Shows all available commands
+
+
+

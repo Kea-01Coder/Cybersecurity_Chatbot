@@ -206,17 +206,6 @@ namespace CybersecurityChatbotWPF
                     if (statusText != null) statusText.Text = "Task deleted!";
                     return;
 
-                // --- QUIZ (Part 3 - Task 2) ---
-                case "start_quiz":
-                    HandleStartQuiz();
-                    if (statusText != null) statusText.Text = "Quiz in progress!";
-                    return;
-
-                case "answer_quiz":
-                    HandleQuizAnswer(input);
-                    if (statusText != null) statusText.Text = "Quiz in progress!";
-                    return;
-
                 // --- ACTIVITY LOG (Part 3 - Task 4) ---
                 case "show_log":
                 case "show_activity":
@@ -299,72 +288,6 @@ namespace CybersecurityChatbotWPF
             speechService?.Speak(result);
         }
 
-        private void HandleStartQuiz()
-        {
-            string userName = memoryManager?.GetUserName() ?? "Anonymous";
-            quizManager?.StartQuiz(userName);
-            string startMsg = quizManager?.StartQuizPrompt() ?? "Starting quiz!";
-            AddMessage("Bot", startMsg, Brushes.LightGreen);
-            speechService?.Speak("Starting quiz!");
-            activityLogger?.Log("Quiz Started", $"User: {userName}", "Quiz");
-        }
-
-        private void HandleQuizAnswer(string input)
-        {
-            if (quizManager == null || !quizManager.IsQuizActive())
-            {
-                AddMessage("Bot", "No quiz is currently active. Type 'Start quiz' to begin!", Brushes.LightGreen);
-                return;
-            }
-
-            string answerStr = nlpSimulator?.ExtractQuizAnswer(input) ?? "";
-            if (string.IsNullOrEmpty(answerStr) || !int.TryParse(answerStr, out int answerIndex))
-            {
-                var currentQuestion = quizManager.GetCurrentQuestion();
-                if (currentQuestion != null)
-                {
-                    AddMessage("Bot", $"Please type the number of your answer (1-{currentQuestion.Options.Count})", Brushes.LightGreen);
-                }
-                return;
-            }
-
-            // Submit answer (adjust for 0-based index)
-            int selectedIndex = answerIndex - 1;
-            var question = quizManager.GetCurrentQuestion();
-
-            if (selectedIndex < 0 || selectedIndex >= question.Options.Count)
-            {
-                AddMessage("Bot", $"Invalid answer. Please choose a number between 1 and {question.Options.Count}", Brushes.LightGreen);
-                return;
-            }
-
-            // Submit the answer and get feedback
-            string feedback = quizManager.SubmitAnswer(selectedIndex);
-            AddMessage("Bot", feedback, Brushes.LightGreen);
-            speechService?.Speak(feedback);
-
-            // Get next question as QuizQuestion object
-            var nextQuestion = quizManager.GetNextQuestion();
-
-            if (nextQuestion != null)
-            {
-                // There's a next question - display it
-                string nextQuestionText = quizManager.FormatQuestion(nextQuestion);
-                AddMessage("Bot", nextQuestionText, Brushes.LightGreen);
-            }
-            else
-            {
-                // Quiz is complete!
-                string result = quizManager.GetQuizResult();
-                AddMessage("Bot", $"{result}", Brushes.LightGreen);
-                speechService?.Speak(result);
-                activityLogger?.Log("Quiz Completed", $"Score: {quizManager.GetScore()}/{quizManager.GetTotalQuestions()}", "Quiz");
-
-                // Save score to database
-                string userName = memoryManager?.GetUserName() ?? "Anonymous";
-                dbHelper?.SaveQuizScore(userName, quizManager.GetScore(), quizManager.GetTotalQuestions());
-            }
-        }
 
         private void HandleCybersecurityTopic(string topic)
         {
@@ -454,10 +377,6 @@ namespace CybersecurityChatbotWPF
             }
         }
 
-        // =====================================================
-        // ==== YOUR ORIGINAL HELPERS (Unchanged) ==============
-        // =====================================================
-
         private void RespondWithSentiment(string sentiment)
         {
             string sentimentResponse = sentimentAnalyzer?.GetSentimentResponse(sentiment);
@@ -539,26 +458,22 @@ namespace CybersecurityChatbotWPF
         private void ShowHelp()
         {
             string help = @"
-                **What I can help you with:**
+                What I can help you with:
 
-                **Tasks:**
+                Tasks:
                 • 'Add task: [title]' - Create a new task
                 • 'Add task with reminder in 3 days: [title]'
                 • 'List tasks' - View all tasks
                 • 'Complete task: [title]' - Mark as done
                 • 'Delete task: [title]' - Remove a task
 
-                **Quiz:**
-                • 'Start quiz' - Begin cybersecurity quiz
-                • Type answer number (1, 2, 3...)
-
-                **Activity Log:**
+                Activity Log:
                 • 'Show activity log' - View recent actions
 
-                **Cybersecurity Topics:**
+                Cybersecurity Topics:
                 • 'password', 'phishing', 'scam', 'privacy', 'malware'
 
-                **Help:**
+                Help:
                 • 'help' or 'what can you do'";
 
             AddMessage("Bot", help, Brushes.LightGreen);
@@ -628,24 +543,6 @@ namespace CybersecurityChatbotWPF
             if (e.Key == Key.Enter)
             {
                 SendButton_Click(sender, e);
-            }
-        }
-
-        private void VoiceInputButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (speechService != null && speechService.IsSpeechRecognitionAvailable())
-            {
-                var statusText = FindName("StatusText") as System.Windows.Controls.TextBlock;
-                if (statusText != null)
-                {
-                    statusText.Text = "Listening... Speak now!";
-                    statusText.Foreground = Brushes.Yellow;
-                }
-                speechService.StartListening();
-            }
-            else
-            {
-                AddMessage("Bot", "Voice recognition is not available on this system.", Brushes.Orange);
             }
         }
 
